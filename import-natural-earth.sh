@@ -11,8 +11,7 @@ function import_natural_earth() {
     -progress \
     -f Postgresql \
     -s_srs EPSG:4326 \
-    -t_srs EPSG:3857 \
-    -clipsrc -180.1 -85.0511 180.1 85.0511 \
+    -t_srs EPSG:4326 \
     PG:"$PGCONN" \
     -lco GEOMETRY_NAME=geometry \
     -lco DIM=2 \

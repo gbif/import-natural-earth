@@ -5,6 +5,8 @@ This is a Docker image to import a subset of [NaturalEarth](http://www.naturalea
 The SQLite database containing the tables for the import is already baked
 into the container to make distribution and execution easier.
 
+This version imports into a database in EPSG:4326 projection.
+
 ## Usage
 
 Provide the database credentials and run `import-water`.
