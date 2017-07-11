@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       wget \
       unzip \
       sqlite3 \
-    && wget --quiet http://naciscdn.org/naturalearth/packages/natural_earth_vector.sqlite.zip \
+    && wget --quiet http://download.gbif.org/2017/01/natural_earth_vector.sqlite.zip \
     && unzip -oj natural_earth_vector.sqlite.zip -d /import \
     && rm natural_earth_vector.sqlite.zip \
     && /usr/src/app/clean-natural-earth.sh \
